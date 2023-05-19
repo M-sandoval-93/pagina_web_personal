@@ -3,11 +3,8 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    // menuIcon.classList.remove('fas fa-bars');
-    // menuIcon.classList.toggle('fa-solid fa-xmark');
-    // this.classList.remove('fas fa-bars')
-    // menuIcon.classList.remove('fas fa-bars');
-    // console.log(menuIcon.className);
+    menuIcon.classList.toggle("fa-times");
+    navbar.classList.toggle("active");
 }
 
 
