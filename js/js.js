@@ -43,6 +43,12 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
     menuIcon.classList.remove('fa-times');
     navbar.classList.remove('active');
+
+    // animation footer on scroll
+    let footer = document.querySelector('footer');
+
+    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
+     
 }
 
 
