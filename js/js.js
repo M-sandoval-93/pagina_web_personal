@@ -14,7 +14,6 @@ let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 100;
@@ -35,8 +34,6 @@ window.onscroll = () => {
             sec.classList.remove('show-animate');
         }
     });
-
-
 
     // sticky header
     let header = document.querySelector('header');
@@ -60,3 +57,26 @@ window.onscroll = () => {
 // toggle_interactive.onclick = function() {
 //     this.classList.toggle('open');
 // }
+
+
+// dark mode implementation testing
+
+// const btn = document.getElementById('visual-mode');
+// const rootStyles = document.documentElement.style;
+
+// btn.addEventListener('click', () => {
+//     if (rootStyles.getPropertyValue('--main-color') === '#243441') {
+//         rootStyles.setProperty('--main-color', '#ecf6ff');
+//         rootStyles.setProperty('--secondary-main-color', '#bac5cd');
+//         rootStyles.setProperty('--text-white', '#000000');
+//         rootStyles.setProperty('--text-nav', '#2f6fa4');
+//     } else {
+//         rootStyles.setProperty('--main-color', '#243441');
+//         rootStyles.setProperty('--secondary-main-color', '#2f4b61');
+//         rootStyles.setProperty('--text-white', '#ffffff');
+//         rootStyles.setProperty('--text-nav', '#3aa4fa');
+//     }
+// });
+
+
+
